@@ -19,7 +19,9 @@ $white: #fff;
       text-align: right;
       color: $white;
       background: $result;
+      border-bottom: 1px solid $border;
     }
+    
     .calculator-group-button {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -29,11 +31,11 @@ $white: #fff;
         border-bottom: 1px solid $border;
         border-right: 1px solid $border;
 
-        &:nth-child(1), &:nth-child(2) {
-          border-top: 1px solid $border;
+        &:nth-child(1) {
+          border-left: 1px solid $border;
         }
 
-        &:nth-child(1), &:nth-child(3), &:nth-child(7), &:nth-child(11) {
+        &:nth-child(4n + 3) {
           border-left: 1px solid $border;
         }
 
